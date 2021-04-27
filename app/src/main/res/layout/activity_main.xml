@@ -12,41 +12,139 @@
 
         android:layout_width="match_parent"
         android:layout_height="162dp"
-        android:background="#022506" >
+        android:background="#08320D">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:background="022506"
+            app:srcCompat="@drawable/unnamed" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
+            android:id="@+id/textView6"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="10dp"
             android:text="SMK SYAFI'I AKROM"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView"
+        android:id="@+id/nestedScrollView3"
         android:layout_width="match_parent"
-
-
-        android:layout_height="match_parent"
-        app:layout_anchor="@+id/nestedScrollView"
-        app:layout_anchorGravity="center"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        android:layout_height="735dp"
+        android:fillViewport="true"
+        app:layout_anchor="@+id/nestedScrollView3"
+        app:layout_anchorGravity="center">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".MainActivity"/>
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
 
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="156dp"
+                android:background="#79BF82"
+                android:fillViewport="true"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#DFAFAF"
+                            app:cardCornerRadius="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#C36E6E"
+                            app:cardCornerRadius="20dp">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="100dp"
+                                android:text="LOKASI"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <ImageView
+                                android:id="@+id/imageView28"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                app:srcCompat="@drawable/d4858fd1d4664a86bcf06733e56608d7" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#DFAFAF"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:text="JADWAL PELAJARAN"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold|italic" />
+
+                            <ImageView
+                                android:id="@+id/imageView27"
+                                android:layout_width="100dp"
+                                android:layout_height="95dp"
+                                app:srcCompat="@drawable/kalender" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="118dp"
-        app:srcCompat="@drawable/unnamed" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
